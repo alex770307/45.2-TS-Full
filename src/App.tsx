@@ -1,5 +1,5 @@
 import { CartProvider } from "./context/CartContext";
-import { FavoritesProvider } from "./favoritesContext/FavoritesContext";
+// import { FavoritesProvider } from "./favoritesContext/FavoritesContext";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./layout/Layout";
@@ -52,7 +52,7 @@ import Products from "./components/products/Products";
 
 function App() {
   return (
-    <FavoritesProvider>
+    // <FavoritesProvider>
     <CartProvider>
       <HashRouter>
         <Routes>
@@ -120,7 +120,7 @@ function App() {
         </Routes>
       </HashRouter>
     </CartProvider>
-    </FavoritesProvider>
+    //  </FavoritesProvider>
   );
 }
 
